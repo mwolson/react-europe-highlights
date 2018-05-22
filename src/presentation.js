@@ -5,6 +5,7 @@ import {
   Text,
 } from 'spectacle';
 import {
+  SectionSlide,
   TextSlide,
   TitleSlide,
 } from './slides'
@@ -28,6 +29,12 @@ export default class Presentation extends Component {
             Takeaways
           </Text>
         </TitleSlide>
+
+        <SectionSlide>
+          <Heading size={4}>
+            Tools!
+          </Heading>
+        </SectionSlide>
 
         <TextSlide>
           <Heading size={6}>
