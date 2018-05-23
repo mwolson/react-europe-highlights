@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import {
-  Deck,
   Heading,
   Text,
 } from 'spectacle';
+import { ThemedDeck } from './deck'
 import {
   SectionSlide,
   TextSlide,
@@ -16,11 +16,7 @@ require('normalize.css')
 export default class Presentation extends Component {
   render() {
     return (
-      <Deck
-        transition={['fade']}
-        transitionDuration={500}
-        theme={theme}
-      >
+      <ThemedDeck theme={theme}>
         <TitleSlide>
           <Heading size={3}>
             ReactEurope 2018
@@ -44,7 +40,7 @@ export default class Presentation extends Component {
             Most presenters used Spectacle to create slides with JSX markup
           </Text>
         </TextSlide>
-      </Deck>
+      </ThemedDeck>
     )
   }
 }

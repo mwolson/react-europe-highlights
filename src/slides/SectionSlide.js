@@ -1,25 +1,28 @@
 import React, { Component } from 'react'
-import {
-  Heading,
-  Slide,
-} from 'spectacle'
+import * as Spectacle from 'spectacle'
+
+const { Heading, Slide } = Spectacle
+const SpectacleClasses = Object.values(Spectacle)
 
 class SectionSlide extends Component {
+  static bgColor = "quartenary"
+
+  static applyTheme({ children }) {
+    return React.Children.map(children, child => {
+      if (!SpectacleClasses.some(inClass => child.type === inClass)) return child
+
+      if (child.type === Heading) {
+        return React.cloneElement(child, Object.assign({ caps: true, textColor: "tertiary" }, child.props))
+      }
+
+      return React.cloneElement(child, Object.assign({ textColor: "secondary" }, child.props))
+    })
+  }
+
   render() {
-    const { children } = this.props
     return (
-      <Slide bgColor="quartenary">
-        {
-          React.Children.map(children, child => {
-            if (child.props.textColor) return child
-
-            if (child.type === Heading) {
-              return React.cloneElement(child, { caps: true, textColor: "tertiary" })
-            }
-
-            return React.cloneElement(child, { textColor: "secondary" })
-          })
-        }
+      <Slide bgColor={SectionSlide.bgColor}>
+        {SectionSlide.applyTheme(this.props)}
       </Slide>
     )
   }
