@@ -8,7 +8,7 @@ class SectionSlide extends Component {
   render() {
     const { children } = this.props
     return (
-      <Slide bgColor="primary">
+      <Slide bgColor="quartenary">
         {
           React.Children.map(children, child => {
             if (child.props.textColor) return child
