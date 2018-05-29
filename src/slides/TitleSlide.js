@@ -12,10 +12,10 @@ class TitleSlide extends Component {
       if (!SpectacleClasses.some(inClass => child.type === inClass)) return child
 
       if (child.type === Heading) {
-        return React.cloneElement(child, Object.assign({ textColor: "primary" }, child.props))
+        return React.cloneElement(child, { textColor: "primary", ...child.props, size: 3 })
       }
 
-      return React.cloneElement(child, Object.assign({ textColor: "secondary" }, child.props))
+      return React.cloneElement(child, { textColor: "secondary", ...child.props })
     })
   }
 

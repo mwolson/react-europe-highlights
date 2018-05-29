@@ -18,24 +18,16 @@ export default class Presentation extends Component {
     return (
       <ThemedDeck theme={theme}>
         <TitleSlide>
-          <Heading size={3}>
-            ReactEurope 2018
-          </Heading>
-          <Text>
-            Takeaways
-          </Text>
+          <Heading>ReactEurope 2018</Heading>
+          <Text>Takeaways</Text>
         </TitleSlide>
 
         <SectionSlide>
-          <Heading size={4}>
-            Tools!
-          </Heading>
+          <Heading>Tools!</Heading>
         </SectionSlide>
 
         <TextSlide>
-          <Heading size={6}>
-            Presentation software
-          </Heading>
+          <Heading>Presentation software</Heading>
           <Text>
             Most presenters used Spectacle to create slides with JSX markup
           </Text>

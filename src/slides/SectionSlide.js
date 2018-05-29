@@ -12,10 +12,10 @@ class SectionSlide extends Component {
       if (!SpectacleClasses.some(inClass => child.type === inClass)) return child
 
       if (child.type === Heading) {
-        return React.cloneElement(child, Object.assign({ caps: true, textColor: "tertiary" }, child.props))
+        return React.cloneElement(child, { caps: true, textColor: "tertiary", ...child.props, size: 4 })
       }
 
-      return React.cloneElement(child, Object.assign({ textColor: "secondary" }, child.props))
+      return React.cloneElement(child, { textColor: "secondary", ...child.props })
     })
   }
 
