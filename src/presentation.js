@@ -23,6 +23,20 @@ export default class Presentation extends Component {
         </TitleSlide>
 
         <SectionSlide>
+          <Heading>React News</Heading>
+        </SectionSlide>
+
+        <TextSlide>
+          <Heading>Suspense</Heading>
+          <Text>
+            Suspense allows you to suspend rendering while loading async data
+          </Text>
+          <Text>
+            To take advantage of it, throw a Promise from render()
+          </Text>
+        </TextSlide>
+
+        <SectionSlide>
           <Heading>Tools!</Heading>
         </SectionSlide>
 
