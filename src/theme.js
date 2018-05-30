@@ -5,7 +5,7 @@ const theme = createTheme(
     primary: 'white',
     secondary: '#1F2022',
     tertiary: '#03A9FC',
-    quartenary: '#CECECE',
+    quartenary: '#C4C4C4',
   },
   {
     primary: 'Montserrat',

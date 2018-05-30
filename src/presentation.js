@@ -115,6 +115,15 @@ export default class Presentation extends Component {
             Tweet at some authors of related projects that your code works with
           </Text>
         </TextSlide>
+        <TextSlide>
+          <Heading>CSS in JS</Heading>
+          <Text>
+            Still a debate vs. standalone SCSS
+          </Text>
+          <Text>
+            Lots of different projects in use
+          </Text>
+        </TextSlide>
 
         <SectionSlide>
           <Heading>Tools</Heading>
