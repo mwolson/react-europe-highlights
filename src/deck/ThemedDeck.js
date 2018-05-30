@@ -3,7 +3,7 @@ import { Deck, Slide } from 'spectacle'
 import * as slides from '../slides'
 
 const SlideClasses = Object.values(slides)
-const transition = ['fade']
+const transition = []
 
 class ThemedDeck extends Component {
   render() {
