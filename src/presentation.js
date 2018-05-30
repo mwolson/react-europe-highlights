@@ -162,25 +162,34 @@ export default class Presentation extends Component {
           </Text>
         </TextSlide>
         <TextSlide>
+          <Heading>CodeSandbox Demo</Heading>
+          <LinkAndText href={'https://codesandbox.io/s/7zvwnzm831'} />
+        </TextSlide>
+        <TextSlide>
           <Heading>Presentation software</Heading>
           <Text>
             Most presenters used Spectacle to create slides with JSX markup (including this presentation, too)
           </Text>
         </TextSlide>
         <TextSlide>
-          <Heading>StoryBook</Heading>
+          <Heading>Storybook</Heading>
           <Text>
-            StoryBook can be useful for creating a style guide that's shared by Design and Engineering
+            Storybook can be useful for creating a style guide that's shared by Design and Engineering
           </Text>
+          <LinkAndText href={'https://storybook.js.org/'} />
         </TextSlide>
         <TextSlide>
-          <Heading>StoryBook</Heading>
+          <Heading>Storybook</Heading>
           <Text>
             Render the component with props alongside some documentation for it
           </Text>
           <Text>
             Add that configuration as a single story
           </Text>
+          <LinkAndText
+            href={'https://www.robinwieruch.de/visual-regression-testing-react-storybook/'}
+            text={'Example setup'}
+          />
         </TextSlide>
         <TextSlide>
           <Heading>Reg-Suit</Heading>
