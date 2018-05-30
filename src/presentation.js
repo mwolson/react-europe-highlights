@@ -39,6 +39,15 @@ export default class Presentation extends Component {
           </Text>
         </TextSlide>
         <TextSlide>
+          <Heading>These automatically pause rendering with suspense:</Heading>
+          <Text>
+            React.Timeout
+          </Text>
+          <Text>
+            simple-cache-provider.CacheProvider
+          </Text>
+        </TextSlide>
+        <TextSlide>
           <Heading>Deprecated lifecycle methods</Heading>
           <Text>
             componentWillMount, componentWillReceiveProps, componentWillUpdate
@@ -46,15 +55,6 @@ export default class Presentation extends Component {
           <Heading>New lifecycle methods</Heading>
           <Text>
             getDerivedStateFromProps, getSnapshotBeforeUpdate
-          </Text>
-        </TextSlide>
-        <TextSlide>
-          <Heading>These automatically pause rendering with suspense:</Heading>
-          <Text>
-            React.Timeout
-          </Text>
-          <Text>
-            simple-cache-provider.CacheProvider
           </Text>
         </TextSlide>
         <TextSlide>
@@ -205,9 +205,9 @@ export default class Presentation extends Component {
           </Text>
         </TextSlide>
         <TextSlide>
-          <Heading>Interop React Native and React</Heading>
+          <Heading>React-Native-DOM</Heading>
           <Text>
-            Brings React Native JSX to Web
+            Write React Native components and deploy them as websites
           </Text>
           <Text>
             Uses React Native toolchain for build instead of webpack
@@ -257,6 +257,11 @@ export default class Presentation extends Component {
             React Web support is coming
           </Text>
          </TextSlide>
+         <TextSlide>
+          <Heading textColor="primary">Thanks!</Heading>
+          <LinkAndText href={'https://github.com/mwolson/react-europe-highlights'} />
+        </TextSlide>
+
       </ThemedDeck>
     )
   }
